@@ -7,6 +7,12 @@ $light-gray-field: #d3dce1;
 $lighter-gray-background: #e9eaec;
 
 /***** Fonts *****/
-ProximaNovaCond Semibold
-ProximaNovaCond Bold
-ProximaNovaCond Black
+
+
+
+/***** Page *****/
+.nav-pic {
+  background-attachment: url(/images/navbar.png);
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
