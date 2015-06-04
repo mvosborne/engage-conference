@@ -11,8 +11,103 @@ $lighter-gray-background: #e9eaec;
 
 
 /***** Page *****/
-.nav-pic {
-  background-attachment: url(/images/navbar.png);
-  -webkit-background-size: 100%;
-  background-size: 100%;
+body {
+  padding-top: 0;
+  min-width: 1085px; //keeping in mind navbar 
+
+.header {
+  background-color: $blue-gray;
+  padding: 40px 55px;
+  height: 123px;
+  border-bottom: 3px solid #fff;
+  box-sizing: border-box;
+
+  .nav-logos {
+    height: 38px;
+  }
+
+  #conf-nav {
+    li a {
+      color: #fff;
+      background-color: $orange;
+      margin-right: 2px;
+
+      &.active {
+      color: $dark-gray-text;
+      }
+    }    
+  }
+}
+
+.hero {
+  height: 700px;
+  background-color: #f8f6e9;
+
+  .hero-img {
+    background-image: url(/images/hero.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    white-space: no-wrap;
+  }
+
+  .hero-img:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; /* Adjusts for spacing */
+  }
+
+
+  .hero-text {
+    display: inline-block;
+    vertical-align: middle;
+
+    .register-btn img {
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    .register-btn img:hover {
+      transform: scale(1.02);
+    }
+  }
+}
+
+.about-section {
+  width: 100%;
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.schedule-section {
+  background-color: $lighter-gray-background;
+  padding: 60px;
+
+  #toggle-schedule-info {
+    position: absolute;
+    margin-top: 534px;
+    margin-left: 1105px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    content: "  ";
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
 }

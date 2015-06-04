@@ -1,1 +1,3 @@
-console.log('\'Allo \'Allo!');
+$('#toggle-schedule-info').click( function () {
+  console.log('bhh');
+});
