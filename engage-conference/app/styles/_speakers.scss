@@ -57,6 +57,7 @@
       color:$white;
       @include openSansSmBd(18px);
       border-bottom:1px solid $white;
+      @include transition(all 300ms);
       &:hover {
         color:$dark-gray-text;
         text-decoration: none;
