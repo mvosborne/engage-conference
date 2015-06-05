@@ -1,0 +1,67 @@
+#speakers{
+  padding: 487px 88px 50px 95px;
+  color:$white;
+  text-align:center;
+  background: $orange url(/images/speakers-section.png) no-repeat center top;
+  @include clearfix();
+
+  .speaker {
+    width:25%;
+    float:left;
+    vertical-align: top;
+
+    .photo {
+      width:100%;
+      padding:0 20px;
+      overflow:hidden;
+      img {
+        width:100%;
+      }
+    }
+
+    .name {
+      @include openSansBd(24px);
+      text-transform: uppercase;
+    }
+
+    .title {
+      @include openSansBd(13px);
+      line-height:16px;
+      text-transform: uppercase;
+    }
+
+    .bio {
+      position:relative;
+      margin: 16px 0 20px 0;
+      padding: 24px 20px 0;
+
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      &:before {
+        position:absolute;
+        content:"";
+        display:block;
+        width:30%;
+        margin:0 auto;
+        top:0;
+        left:0;
+        right:0;
+        border-bottom:3px solid $dark-orange;
+      }
+    }
+
+    .read-more {
+      color:$white;
+      @include openSansSmBd(18px);
+      border-bottom:1px solid $white;
+      &:hover {
+        color:$dark-gray-text;
+        text-decoration: none;
+        border-bottom:1px solid $dark-gray-text;
+      }
+    }
+  }
+}

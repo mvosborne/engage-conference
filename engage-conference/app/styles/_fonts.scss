@@ -1,0 +1,47 @@
+// FONTS
+
+
+// Open Sans Regular
+@mixin openSans($font-size, $letter-spacing:-.02em) {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size:$font-size;
+  letter-spacing:$letter-spacing;
+}
+
+// Open Sans Light
+@mixin openSansLt($font-size, $letter-spacing:-.02em) {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size:$font-size;
+  letter-spacing: $letter-spacing;
+}
+
+// Open Sans Semi Bold (ProximaNovaCondSemibold in PSD)
+@mixin openSansSmBd($font-size, $letter-spacing:-.02em) {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size:$font-size;
+  letter-spacing: $letter-spacing;
+}
+
+// Open Sans Bold (ProximaNovaCondBold in PSD)
+@mixin openSansBd($font-size, $letter-spacing:-.02em) {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size:$font-size;
+  letter-spacing: $letter-spacing;
+}
+
+//Open Sans Extra Bold (ProximaNovaCondBlack in PSD)
+@mixin openSansExBd($font-size, $letter-spacing:-.02em) {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size:$font-size;
+  letter-spacing: $letter-spacing;
+}

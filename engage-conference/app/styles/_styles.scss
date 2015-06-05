@@ -1,13 +1,3 @@
-/***** Colors *****/
-$blue-gray: #32444e;
-$orange: #ef7246;
-$dark-orange:#8b513f;
-$light-cgray-text: #757575;
-$dark-gray-text: #393e46;
-$light-gray-field: #d3dce1;
-$lighter-gray-background: #e9eaec;
-
-/***** Fonts *****/
 
 
 
@@ -15,31 +5,11 @@ $lighter-gray-background: #e9eaec;
 
 body {
   padding-top: 0;
-  min-width: 1085px; //keeping in mind navbar 
-
-.header {
-  background-color: $blue-gray;
-  padding: 40px 55px;
-  height: 123px;
-  border-bottom: 3px solid #fff;
-  box-sizing: border-box;
-
-  .nav-logos {
-    height: 38px;
-  }
-
-  #conf-nav {
-    li a {
-      color: #fff;
-      background-color: $orange;
-      margin-right: 2px;
-
-      &.active {
-      color: $dark-gray-text;
-      }
-    }    
-  }
+  min-width: 1085px; //keeping in mind navbar
+  @include openSansSmBd(14px, 0);
 }
+
+
 
 .hero {
   height: 700px;
@@ -109,8 +79,5 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-}
-
-
 }
 
