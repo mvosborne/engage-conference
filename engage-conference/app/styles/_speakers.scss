@@ -1,9 +1,14 @@
 #speakers{
-  padding: 487px 88px 50px 95px;
-  color:$white;
-  text-align:center;
-  background: $orange url(/images/speakers-section.png) no-repeat center top;
   @include clearfix();
+  background: $orange;
+
+  .container {
+    // padding: 0;
+    padding: 487px 0 50px 0;
+    color:$white;
+    text-align:center;
+    background: $orange url(/images/speakers.jpg) no-repeat center top;
+  }
 
   .speaker {
     width:25%;
@@ -63,6 +68,17 @@
         text-decoration: none;
         border-bottom:1px solid $dark-gray-text;
       }
+      &:focus {
+        text-decoration: none;
+      }
+    }
+
+    .expand {
+      -webkit-line-clamp: initial;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
     }
   }
 }
