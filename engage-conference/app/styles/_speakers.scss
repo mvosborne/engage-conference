@@ -56,7 +56,28 @@
         right:0;
         border-bottom:3px solid $dark-orange;
       }
+
+      @-moz-document url-prefix() {
+        & {
+          position: relative;
+          line-height: 1.4em;
+          /* 4 times the line-height to show 4 lines */
+          height: 1.4 * 5.4em;
+        }
+
+        &:after {
+           content: "...";
+            font-weight: bold;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 0 20px 1px 45px;
+            background: url(images/ellipsis_bg.png) repeat-y;
+        }
+      }
     }
+
+
 
     .read-more {
       color:$white;
