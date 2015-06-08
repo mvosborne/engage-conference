@@ -63,7 +63,7 @@ $('.read-more').click( function (event) {
     bio.html( speakers[name].shortTxt );
     speaker.removeClass('expanded');
   }
-  
+
   else {
     bio.html( speakers[name].longTxt );
     speaker.addClass('expanded');
