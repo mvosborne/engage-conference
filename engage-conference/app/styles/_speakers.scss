@@ -72,7 +72,17 @@
             bottom: 0;
             right: 0;
             padding: 0 20px 1px 45px;
-            background: url(images/ellipsis_bg.png) repeat-y;
+            background: url(/images/ellipsis_bg.png) repeat-y;
+        }
+
+        &.special:after {
+          content: "";
+          font-weight: bold;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          padding: 0 20px 1px 45px;
+          background: none;
         }
       }
     }
@@ -100,6 +110,10 @@
       -moz-transition: all 0.5s ease;
       -o-transition: all 0.5s ease;
       transition: all 0.5s ease;
+    }
+
+    .expand-no-line-clamp {
+      height: initial;
     }
   }
 }
