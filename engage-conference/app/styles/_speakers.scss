@@ -7,11 +7,11 @@
     padding: 487px 0 50px 0;
     color:$white;
     text-align:center;
-    background: $orange url(/images/speakers.jpg) no-repeat center top;
+    background: $orange url(/images/speakers-section.jpg) no-repeat center top;
   }
 
   .speaker {
-    width:25%;
+    width:20%;
     float:left;
     vertical-align: top;
 
@@ -57,34 +57,34 @@
         border-bottom:3px solid $dark-orange;
       }
 
-      @-moz-document url-prefix() {
-        & {
-          position: relative;
-          line-height: 1.4em;
-          /* 4 times the line-height to show 4 lines */
-          height: 1.4 * 5.4em;
-        }
+      // @-moz-document url-prefix() {
+      //   & {
+      //     position: relative;
+      //     line-height: 1.4em;
+      //     /* 4 times the line-height to show 4 lines */
+      //     height: 1.4 * 5.4em;
+      //   }
 
-        &:after {
-           content: "...";
-            font-weight: bold;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            padding: 0 20px 1px 45px;
-            background: url(/images/ellipsis_bg.png) repeat-y;
-        }
+      //   &:after {
+      //      content: "...";
+      //       font-weight: bold;
+      //       position: absolute;
+      //       bottom: 0;
+      //       right: 0;
+      //       padding: 0 20px 1px 45px;
+      //       background: url(/images/ellipsis_bg.png) repeat-y;
+      //   }
 
-        &.special:after {
-          content: "";
-          font-weight: bold;
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          padding: 0 20px 1px 45px;
-          background: none;
-        }
-      }
+      //   &.special:after {
+      //     content: "";
+      //     font-weight: bold;
+      //     position: absolute;
+      //     bottom: 0;
+      //     right: 0;
+      //     padding: 0 20px 1px 45px;
+      //     background: none;
+      //   }
+      // }
     }
 
 

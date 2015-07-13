@@ -86,6 +86,32 @@ body {
   }
 }
 
+#toggle-jeanbliss-info {
+  position: absolute;
+  background-color: #dadada;
+  border-radius: 5px;
+  right: 195px;
+  top: 384px;
+  height: 30px;
+  width: 30px;
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+#jeanbliss-popup {
+  position: absolute;
+  display: inline-block;
+  background-color: #dadada;
+  padding: 14px;
+  width: 610px;
+  border-radius: 5px;
+  top: 445px;
+  left: 270px;
+  display: none;
+}
+
 #toggle-schedule-info {
   position: absolute;
   background-color: #dadada;
@@ -108,7 +134,7 @@ body {
   width: 610px;
   border-radius: 5px;
   top: 658px;
-  left: 285px;
+  left: 270px;
   display: none;
 }
 
